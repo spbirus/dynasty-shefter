@@ -82,7 +82,7 @@ def bot_main(function):
     # else:
     #     league = League(league_id, year, espn_s2=espn_s2, swid=swid)
 
-    test = True
+    test = False
     if test:
         bot.send_message("Testing")
         bot.send_message("" + random_phrase())
@@ -166,9 +166,9 @@ if __name__ == '__main__':
     # sched.add_job(bot_main, 'cron', ['get_scoreboard_short'], id='scoreboard1',
     #     day_of_week='fri,mon', hour=7, minute=30, start_date=ff_start_date, end_date=ff_end_date,
     #     timezone=my_timezone, replace_existing=True)
-    sched.add_job(bot_main, 'cron', ['random_phrase'], id='random_phrase',
-        day_of_week='sun', hour='15,42', start_date=ff_start_date, end_date=ff_end_date,
-        timezone=game_timezone, replace_existing=True)
+    # sched.add_job(bot_main, 'cron', ['random_phrase'], id='random_phrase',
+    #     day_of_week='sun', hour='15,42', start_date=ff_start_date, end_date=ff_end_date,
+    #     timezone=game_timezone, replace_existing=True)
 
     print("Ready!")
     sched.start()
