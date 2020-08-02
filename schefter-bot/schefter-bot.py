@@ -85,7 +85,7 @@ def bot_main(function):
     test = True
     if test:
         bot.send_message("Testing")
-        bot.send_message(random_phrase())
+        bot.send_message("" + random_phrase())
 
     # text = ''
     # if function=="get_matchups":
