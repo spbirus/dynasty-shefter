@@ -1,0 +1,21 @@
+{
+  "name": "Dynasty Schefter Bot",
+  "description": "Dynasty Schefter GroupMe Bot.",
+  "keywords": ["fantasy football", "espn", "groupme", "chat bot", "ff"],
+  "website": "https://github.com/spbirus/dynasty-shefter/",
+  "repository": "https://github.com/spbirus/dynasty-shefter/",
+  "env": {
+    "BOT_ID": {
+      "description": "GroupMe Bot ID",
+      "value": "1"
+    },
+    "LEAGUE_ID": {
+      "description": "ESPN League ID",
+      "value": "1"
+    },
+    "LEAGUE_YEAR": {
+      "description": "ESPN League Year",
+      "value": "2020"
+    }
+  }
+}
