@@ -84,7 +84,6 @@ def bot_main(function):
 
     test = True
     if test:
-        function="get_final"
         bot.send_message("Testing")
         bot.send_message(random_phrase())
 
