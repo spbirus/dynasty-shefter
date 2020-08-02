@@ -3,7 +3,7 @@ import json
 import os
 import random
 from apscheduler.schedulers.blocking import BlockingScheduler
-from ff_espn_api import League
+# from ff_espn_api import League
 
 class GroupMeException(Exception):
     pass
