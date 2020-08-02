@@ -77,10 +77,10 @@ def bot_main(function):
         espn_s2 = '1'
 
     bot = GroupMeBot(bot_id)
-    if swid == '{1}' and espn_s2 == '1':
-        league = League(league_id, year)
-    else:
-        league = League(league_id, year, espn_s2=espn_s2, swid=swid)
+    # if swid == '{1}' and espn_s2 == '1':
+    #     league = League(league_id, year)
+    # else:
+    #     league = League(league_id, year, espn_s2=espn_s2, swid=swid)
 
     test = True
     if test:
@@ -167,9 +167,9 @@ if __name__ == '__main__':
     # sched.add_job(bot_main, 'cron', ['get_scoreboard_short'], id='scoreboard1',
     #     day_of_week='fri,mon', hour=7, minute=30, start_date=ff_start_date, end_date=ff_end_date,
     #     timezone=my_timezone, replace_existing=True)
-    # sched.add_job(bot_main, 'cron', ['get_scoreboard_short'], id='scoreboard2',
-    #     day_of_week='sun', hour='16,20', start_date=ff_start_date, end_date=ff_end_date,
-    #     timezone=game_timezone, replace_existing=True)
+    sched.add_job(bot_main, 'cron', ['random_phrase'], id='random_phrase',
+        day_of_week='sun', hour='15,35', start_date=ff_start_date, end_date=ff_end_date,
+        timezone=game_timezone, replace_existing=True)
 
     print("Ready!")
     sched.start()
