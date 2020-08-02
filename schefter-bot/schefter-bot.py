@@ -77,7 +77,6 @@ def bot_main(function):
         espn_s2 = '1'
 
     bot = GroupMeBot(bot_id)
-    print(bot_it)
     # if swid == '{1}' and espn_s2 == '1':
     #     league = League(league_id, year)
     # else:
