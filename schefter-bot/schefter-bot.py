@@ -45,7 +45,7 @@ def random_phrase():
                 'reporting',
                 '*looks down at phone*'
               ]
-    return [random.choice(phrases)]
+    return random.choice(phrases)
 
 
 def bot_main(function):
