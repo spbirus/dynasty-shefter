@@ -169,6 +169,7 @@ if __name__ == '__main__':
     # sched.add_job(bot_main, 'cron', ['random_phrase'], id='random_phrase',
     #     day_of_week='sun', hour='15,42', start_date=ff_start_date, end_date=ff_end_date,
     #     timezone=game_timezone, replace_existing=True)
+    sched.remove_job("random_phrase")
 
     print("Ready!")
     sched.start()
